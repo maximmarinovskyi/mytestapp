@@ -1,3 +1,9 @@
 .Header {
+  background-color: rgb(53, 58, 65);
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 25vh;
+  color: rgb(223, 230, 166);
 }

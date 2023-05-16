@@ -7,6 +7,8 @@ import Footer from './Footer/Footer.js';
 import reportWebVitals from './reportWebVitals';
 // import Global from './Global/Global';
 
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

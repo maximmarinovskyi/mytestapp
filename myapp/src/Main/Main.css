@@ -1,3 +1,14 @@
 .Main {
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(223, 230, 166);
+  color: rgb(53, 58, 65);
+  height: 50vh;
+}
+
+ol {
+  font-size: 2em;
+  line-height: 2;
 }
