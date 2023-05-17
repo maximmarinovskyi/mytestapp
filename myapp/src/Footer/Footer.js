@@ -2,28 +2,43 @@ import React from 'react';
 import './Footer.css';
 
 let list = {
-  "Phone": "...phone...",
-  "Email": "...email...",
-  "Viber": "...viber...",
-  "Telegramm": "...telegramm",
-  "Facebook": "...facebook...",
-  "LinkedIn": "...linkedIn...",
+  phone: "...phone...",
+  email: "...email...",
+  viber: "...viber...",
 }
 
-
 class Footer extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = list
+  }
+
+  changeNav = () => {
+    this.setState({
+
+      phone: "phone",
+      email: "email",
+      viber: "viber",
+      max: "...maxim...",
+    })
+  }
+
   render() {
+
     return (
       < div className="Footer" >
         <div className='contacts'>
           <ul>
-            {Object.values(list).map(function (item) {
+            {Object.values(this.state).map(function (item) {
               return <li>{item}</li>
             })}
           </ul>
+          <button onClick={this.changeNav}>Button</button>
         </div>
       </ div >
     );
   }
 }
+
 export default Footer;
