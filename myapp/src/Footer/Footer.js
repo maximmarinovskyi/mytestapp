@@ -10,13 +10,11 @@ let list = {
 class Footer extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = list
   }
 
   changeNav = () => {
     this.setState({
-
       phone: "phone",
       email: "email",
       viber: "viber",
